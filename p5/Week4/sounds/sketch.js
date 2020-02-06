@@ -11,6 +11,10 @@ function setup() {
   song1.play();  // this is what starts the sound
 
 }
+function touchStarted() {
+  getAudioContext().resume();
+}
+
 
 function draw() {
 
