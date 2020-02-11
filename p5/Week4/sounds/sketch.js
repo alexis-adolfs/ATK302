@@ -19,3 +19,17 @@ function touchStarted() {
 function draw() {
 
 }
+
+function mouseReleased() {
+  if (song1.isplaying()) {
+  song1.pause();
+} else {
+  song1.play() ;
+}
+
+
+}
+function touchStarted() {
+  getAudioContext().resume();
+
+}
