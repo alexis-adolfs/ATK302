@@ -14,7 +14,7 @@ function draw() {
   // put drawing code here
   background('black');
     switch(myState){
-      case 0;
+      case 0:
       text("joke", 100, 100);
       break ;
 

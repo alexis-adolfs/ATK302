@@ -1,9 +1,6 @@
 var myState = 0 ;
 var timer = 0 ;
 
-function preload(){
-
-}
 
 function setup() {
   // put setup code here
@@ -35,11 +32,4 @@ function draw() {
         }
         break ;
     }
-}
-
-function mouseReleased(){
-  myState = myState + 1 ;
-  if (myState > 1) {
-    myState = 0 ;
-  }
 }
