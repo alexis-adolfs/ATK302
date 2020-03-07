@@ -9,10 +9,6 @@ var ticket ;
 var timer = 0;
 
 
-
-
-
-
 function setup() {
   // put setup code here
   createCanvas(1500, 1500);
