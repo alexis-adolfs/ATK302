@@ -23,8 +23,8 @@ function setup() {
 function gotData(data) {
   weather = data;
   console.log(data); // for debugging purposes, print out the JSON data when we get it.
-  ws = weather.wind.speed ;
-  temperature = weather.main.temp ;
+  ws = weather.wind.speed;
+  temperature = weather.main.temp;
 }
 
 
@@ -32,36 +32,36 @@ function draw() {
   switch (myState) {
     case 0:
       if (weather) {
-          myState = 1;
+        myState = 1;
       }
       break;
 
     case 1:
-    background(117, 221, 251) ;
-    fill('black');
-    textSize(25);
-    text("Weather in Oswego, IL!", 20, 20) ;
-// parse the weather object and put some text or images using at least 3 different weather data!
-    fill('black');
-    textSize(15);
-    text("The temperature is " + weather.main.temp, 20, 40);
-    text("The humidity is " + weather.main.humidity, 20, 60);
-    text("The windspeed is " + weather.wind.speed, 20, 80);
+      background(117, 221, 251);
+      fill('black');
+      textSize(25);
+      text("Weather in Oswego, IL!", 20, 20);
+      // parse the weather object and put some text or images using at least 3 different weather data!
+      fill('black');
+      textSize(15);
+      text("The temperature is " + weather.main.temp, 20, 40);
+      text("The humidity is " + weather.main.humidity, 20, 60);
+      text("The windspeed is " + weather.wind.speed, 20, 80);
 
-    fill('white');
-    noStroke();
-    ellipse(x, 250, 220, 100);
-    ellipse(x, 215, 140, 90);
-    x = x + ws/3 ;
-    if(x > width) x = 0 ;
+      fill('white');
+      noStroke();
+      ellipse(x, 250, 220, 100);
+      ellipse(x, 215, 140, 90);
+      x = x + ws / 3;
+      if (x > width) x = 0;
 
-    fill('red');
-    var tmp = 0 ;
-    tmp = map(temperature, -10, 90, 2, height-50);
-    rect(width-70, height-40, 30, -tmp);
+      fill('red');
+      var tmp = 0;
+      tmp = map(temperature, -10, 90, 2, height - 50);
+      rect(width - 70, height - 40, 30, -tmp);
 
-    fill('red');
-    ellipse(345, 370, 60, 60);
+      fill('red');
+      ellipse(345, 370, 60, 60);
       break;
 
   }
