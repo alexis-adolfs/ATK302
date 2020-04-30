@@ -13,7 +13,7 @@ function setup() {
 
   createCanvas(windowWidth, windowHeight);
 
-  
+
   alpha = 0;
   beta = 0;
   gamma = 0;
@@ -65,9 +65,10 @@ function draw() {
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill('white');
   noStroke();
-  textSize(300);
+  textSize(200);
   textAlign(CENTER);
-  text("atk", width / 2, height / 2);
+  text("atk302", width / 2, height / 2);
+  text("Alexis Adolfs", width/2, height/1.3);
 
 }
 
