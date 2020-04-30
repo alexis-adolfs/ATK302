@@ -13,7 +13,7 @@ function setup() {
 
   createCanvas(windowWidth, windowHeight);
 
-  // initialize accelerometer variables
+  
   alpha = 0;
   beta = 0;
   gamma = 0;
