@@ -26,7 +26,7 @@ function setup() {
 
 function draw() {
 
-  background('black'); 
+  background('black');
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -65,10 +65,10 @@ function draw() {
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill('white');
   noStroke();
-  textSize(200);
+  textSize(45);
   textAlign(CENTER);
-  text("atk302", width / 2, height / 2);
-  text("Alexis Adolfs", width/2, height/1.3);
+  text("Use the Force!", width / 2, height / 2);
+
 
 }
 
